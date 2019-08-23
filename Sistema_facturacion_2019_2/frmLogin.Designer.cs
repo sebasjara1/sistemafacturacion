@@ -63,12 +63,12 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Depth = 0;
-            this.lblTitulo.Font = new System.Drawing.Font("HelveticaRounded LT Std BdCn", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.lblTitulo.Font = new System.Drawing.Font("Roboto", 11F);
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblTitulo.Location = new System.Drawing.Point(275, 24);
             this.lblTitulo.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(206, 22);
+            this.lblTitulo.Size = new System.Drawing.Size(188, 19);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "V A L I D A R  U S U A R I O";
             // 
@@ -108,33 +108,36 @@
             // 
             // btnValidar
             // 
+            this.btnValidar.AutoSize = true;
             this.btnValidar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnValidar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
             this.btnValidar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnValidar.Depth = 0;
-            this.btnValidar.Font = new System.Drawing.Font("Helvetica Neue", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnValidar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnValidar.Icon = null;
             this.btnValidar.Location = new System.Drawing.Point(239, 193);
             this.btnValidar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnValidar.Name = "btnValidar";
             this.btnValidar.Primary = true;
-            this.btnValidar.Size = new System.Drawing.Size(121, 36);
+            this.btnValidar.Size = new System.Drawing.Size(97, 36);
             this.btnValidar.TabIndex = 4;
             this.btnValidar.Text = "V A L I D A R";
             this.btnValidar.UseVisualStyleBackColor = false;
+            this.btnValidar.Click += new System.EventHandler(this.BtnValidar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.AutoSize = true;
             this.btnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.Depth = 0;
-            this.btnCancelar.Font = new System.Drawing.Font("Helvetica Neue", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnCancelar.Icon = null;
             this.btnCancelar.Location = new System.Drawing.Point(383, 193);
             this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Primary = true;
-            this.btnCancelar.Size = new System.Drawing.Size(120, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(115, 36);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "C A N C E L A R";
             this.btnCancelar.UseVisualStyleBackColor = true;

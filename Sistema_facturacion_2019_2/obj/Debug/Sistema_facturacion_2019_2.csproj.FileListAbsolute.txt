@@ -11,3 +11,17 @@ C:\Users\sebas\Desktop\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica
 C:\Users\sebas\Desktop\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\Sistema_facturacion_2019_2\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.pdb
 C:\Users\sebas\Desktop\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\Sistema_facturacion_2019_2\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmLogin.resources
 C:\Users\sebas\Desktop\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\Sistema_facturacion_2019_2\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmPrincipal.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\bin\Debug\Sistema_facturacion_2019_2.exe.config
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\bin\Debug\Sistema_facturacion_2019_2.exe
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\bin\Debug\Sistema_facturacion_2019_2.pdb
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\bin\Debug\MaterialSkin.dll
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.csprojAssemblyReference.cache
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmLogin.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmPrincipal.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.Properties.Resources.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.csproj.GenerateResource.cache
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.csproj.CoreCompileInputs.cache
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.csproj.CopyComplete
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.exe
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.pdb
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmClientes.resources

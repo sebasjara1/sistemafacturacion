@@ -21,5 +21,12 @@ namespace Sistema_facturacion_2019_2
         {
             Application.Exit();
         }
+
+        private void BtnValidar_Click(object sender, EventArgs e)
+        {
+            frmPrincipal frmppal = new frmPrincipal();
+            this.Hide();
+            frmppal.Show();
+        }
     }
 }
