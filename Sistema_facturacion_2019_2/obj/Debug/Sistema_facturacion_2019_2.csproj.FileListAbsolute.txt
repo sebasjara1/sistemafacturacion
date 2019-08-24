@@ -25,3 +25,8 @@ E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafac
 E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.exe
 E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.pdb
 E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmClientes.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmProductos.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.frmCategorias.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.Forms.frmSeguridad.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.Forms.frmEmpleados.resources
+E:\Personal\Pascual Bravo\NIVEL 4\Herramientas Programación\Practica\sistemafacturacion\Sistema_facturacion_2019_2\obj\Debug\Sistema_facturacion_2019_2.Forms.frmRoles.resources

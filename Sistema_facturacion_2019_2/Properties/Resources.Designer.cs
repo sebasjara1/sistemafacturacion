@@ -173,6 +173,16 @@ namespace Sistema_facturacion_2019_2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap new_product_seal_23_2147503128 {
+            get {
+                object obj = ResourceManager.GetObject("new-product-seal_23-2147503128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap newspaper {
             get {
                 object obj = ResourceManager.GetObject("newspaper", resourceCulture);

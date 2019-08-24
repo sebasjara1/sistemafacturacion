@@ -42,5 +42,35 @@ namespace Sistema_facturacion_2019_2
             frmClientes frmCliente = new frmClientes();
             AbrirForm(frmCliente);
         }
+
+        private void BtnProductos_Click(object sender, EventArgs e)
+        {
+            frmProductos frmProducto = new frmProductos();
+            AbrirForm(frmProducto);
+        }
+
+        private void BtnCategorias_Click(object sender, EventArgs e)
+        {
+            frmCategorias frmCategoria = new frmCategorias();
+            AbrirForm(frmCategoria);
+        }
+
+        private void BtnEmpleados_Click(object sender, EventArgs e)
+        {
+            Forms.frmEmpleados frmEmpleado = new Forms.frmEmpleados();
+            AbrirForm(frmEmpleado);
+        }
+
+        private void BtnRoles_Click(object sender, EventArgs e)
+        {
+            Forms.frmRoles frmRol = new Forms.frmRoles();
+            AbrirForm(frmRol);
+        }
+
+        private void BtnSeguridad_Click(object sender, EventArgs e)
+        {
+            Forms.frmSeguridad frmSeg = new Forms.frmSeguridad();
+            AbrirForm(frmSeg);
+        }
     }
 }

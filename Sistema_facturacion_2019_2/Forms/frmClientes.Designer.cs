@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dgClBusqueda = new System.Windows.Forms.DataGridView();
-            this.btnClBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.txtClBusqueda = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSalir = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnClEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnClActualizar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnClNuevo = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtClEmail = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -44,129 +39,61 @@
             this.txtClDocumento = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtClNombre = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgClBusqueda = new System.Windows.Forms.DataGridView();
+            this.btnClBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.txtClBusqueda = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btnClSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgClBusqueda)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txtClEmail);
             this.panel1.Controls.Add(this.txtClTelefono);
             this.panel1.Controls.Add(this.txtClDireccion);
             this.panel1.Controls.Add(this.txtClDocumento);
             this.panel1.Controls.Add(this.txtClNombre);
-            this.panel1.Location = new System.Drawing.Point(51, 68);
+            this.panel1.Location = new System.Drawing.Point(43, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(713, 426);
+            this.panel1.Size = new System.Drawing.Size(713, 236);
             this.panel1.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(173)))), ((int)(((byte)(169)))));
-            this.panel3.Controls.Add(this.dgClBusqueda);
-            this.panel3.Controls.Add(this.btnClBuscar);
-            this.panel3.Controls.Add(this.txtClBusqueda);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 227);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(711, 197);
-            this.panel3.TabIndex = 8;
-            // 
-            // dgClBusqueda
-            // 
-            this.dgClBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.dgClBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgClBusqueda.Location = new System.Drawing.Point(19, 54);
-            this.dgClBusqueda.Name = "dgClBusqueda";
-            this.dgClBusqueda.Size = new System.Drawing.Size(675, 132);
-            this.dgClBusqueda.TabIndex = 11;
-            // 
-            // btnClBuscar
-            // 
-            this.btnClBuscar.AutoSize = true;
-            this.btnClBuscar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnClBuscar.Depth = 0;
-            this.btnClBuscar.FlatAppearance.BorderSize = 0;
-            this.btnClBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnClBuscar.Icon = null;
-            this.btnClBuscar.Location = new System.Drawing.Point(582, 8);
-            this.btnClBuscar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnClBuscar.Name = "btnClBuscar";
-            this.btnClBuscar.Primary = true;
-            this.btnClBuscar.Size = new System.Drawing.Size(91, 36);
-            this.btnClBuscar.TabIndex = 9;
-            this.btnClBuscar.Text = "B U S C A R";
-            this.btnClBuscar.UseVisualStyleBackColor = true;
-            // 
-            // txtClBusqueda
-            // 
-            this.txtClBusqueda.Depth = 0;
-            this.txtClBusqueda.Hint = "Buscar Cliente";
-            this.txtClBusqueda.Location = new System.Drawing.Point(19, 15);
-            this.txtClBusqueda.MaxLength = 32767;
-            this.txtClBusqueda.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtClBusqueda.Name = "txtClBusqueda";
-            this.txtClBusqueda.PasswordChar = '\0';
-            this.txtClBusqueda.SelectedText = "";
-            this.txtClBusqueda.SelectionLength = 0;
-            this.txtClBusqueda.SelectionStart = 0;
-            this.txtClBusqueda.Size = new System.Drawing.Size(481, 23);
-            this.txtClBusqueda.TabIndex = 10;
-            this.txtClBusqueda.TabStop = false;
-            this.txtClBusqueda.UseSystemPasswordChar = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(99)))), ((int)(((byte)(130)))));
-            this.panel2.Controls.Add(this.btnSalir);
-            this.panel2.Controls.Add(this.btnEliminar);
+            this.panel2.Controls.Add(this.btnClSalir);
+            this.panel2.Controls.Add(this.btnClEliminar);
             this.panel2.Controls.Add(this.btnClActualizar);
             this.panel2.Controls.Add(this.btnClNuevo);
-            this.panel2.Location = new System.Drawing.Point(534, 0);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(533, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(178, 233);
+            this.panel2.Size = new System.Drawing.Size(178, 234);
             this.panel2.TabIndex = 7;
             // 
-            // btnSalir
+            // btnClEliminar
             // 
-            this.btnSalir.AutoSize = true;
-            this.btnSalir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSalir.Depth = 0;
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnSalir.Icon = null;
-            this.btnSalir.Location = new System.Drawing.Point(55, 168);
-            this.btnSalir.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Primary = true;
-            this.btnSalir.Size = new System.Drawing.Size(72, 36);
-            this.btnSalir.TabIndex = 3;
-            this.btnSalir.Text = "S A L I R";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.AutoSize = true;
-            this.btnEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEliminar.Depth = 0;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnEliminar.Icon = null;
-            this.btnEliminar.Location = new System.Drawing.Point(38, 119);
-            this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Primary = true;
-            this.btnEliminar.Size = new System.Drawing.Size(107, 36);
-            this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.Text = "E L I M I N A R";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnClEliminar.AutoSize = true;
+            this.btnClEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClEliminar.Depth = 0;
+            this.btnClEliminar.FlatAppearance.BorderSize = 0;
+            this.btnClEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnClEliminar.Icon = null;
+            this.btnClEliminar.Location = new System.Drawing.Point(38, 119);
+            this.btnClEliminar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClEliminar.Name = "btnClEliminar";
+            this.btnClEliminar.Primary = true;
+            this.btnClEliminar.Size = new System.Drawing.Size(107, 36);
+            this.btnClEliminar.TabIndex = 2;
+            this.btnClEliminar.Text = "E L I M I N A R";
+            this.btnClEliminar.UseVisualStyleBackColor = true;
             // 
             // btnClActualizar
             // 
@@ -292,29 +219,104 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(278, 29);
+            this.label1.Location = new System.Drawing.Point(249, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "ADMINISTRACIÓN DE CLIENTES";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.dgClBusqueda);
+            this.panel3.Controls.Add(this.btnClBuscar);
+            this.panel3.Controls.Add(this.txtClBusqueda);
+            this.panel3.Location = new System.Drawing.Point(16, 310);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(779, 216);
+            this.panel3.TabIndex = 9;
+            // 
+            // dgClBusqueda
+            // 
+            this.dgClBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
+            this.dgClBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgClBusqueda.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgClBusqueda.Location = new System.Drawing.Point(0, 57);
+            this.dgClBusqueda.Name = "dgClBusqueda";
+            this.dgClBusqueda.Size = new System.Drawing.Size(777, 157);
+            this.dgClBusqueda.TabIndex = 11;
+            // 
+            // btnClBuscar
+            // 
+            this.btnClBuscar.AutoSize = true;
+            this.btnClBuscar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClBuscar.Depth = 0;
+            this.btnClBuscar.FlatAppearance.BorderSize = 0;
+            this.btnClBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnClBuscar.Icon = null;
+            this.btnClBuscar.Location = new System.Drawing.Point(600, 15);
+            this.btnClBuscar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClBuscar.Name = "btnClBuscar";
+            this.btnClBuscar.Primary = true;
+            this.btnClBuscar.Size = new System.Drawing.Size(91, 36);
+            this.btnClBuscar.TabIndex = 9;
+            this.btnClBuscar.Text = "B U S C A R";
+            this.btnClBuscar.UseVisualStyleBackColor = true;
+            // 
+            // txtClBusqueda
+            // 
+            this.txtClBusqueda.Depth = 0;
+            this.txtClBusqueda.Hint = "Buscar Cliente";
+            this.txtClBusqueda.Location = new System.Drawing.Point(45, 21);
+            this.txtClBusqueda.MaxLength = 32767;
+            this.txtClBusqueda.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtClBusqueda.Name = "txtClBusqueda";
+            this.txtClBusqueda.PasswordChar = '\0';
+            this.txtClBusqueda.SelectedText = "";
+            this.txtClBusqueda.SelectionLength = 0;
+            this.txtClBusqueda.SelectionStart = 0;
+            this.txtClBusqueda.Size = new System.Drawing.Size(481, 23);
+            this.txtClBusqueda.TabIndex = 10;
+            this.txtClBusqueda.TabStop = false;
+            this.txtClBusqueda.UseSystemPasswordChar = false;
+            // 
+            // btnClSalir
+            // 
+            this.btnClSalir.AutoSize = true;
+            this.btnClSalir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClSalir.Depth = 0;
+            this.btnClSalir.FlatAppearance.BorderSize = 0;
+            this.btnClSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnClSalir.Icon = null;
+            this.btnClSalir.Location = new System.Drawing.Point(52, 168);
+            this.btnClSalir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClSalir.Name = "btnClSalir";
+            this.btnClSalir.Primary = true;
+            this.btnClSalir.Size = new System.Drawing.Size(72, 36);
+            this.btnClSalir.TabIndex = 4;
+            this.btnClSalir.Text = "S A L I R";
+            this.btnClSalir.UseVisualStyleBackColor = true;
+            this.btnClSalir.Click += new System.EventHandler(this.BtnClSalir_Click);
             // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(163)))), ((int)(((byte)(188)))));
-            this.ClientSize = new System.Drawing.Size(824, 519);
+            this.ClientSize = new System.Drawing.Size(824, 596);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
             this.Text = "frmClientes";
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgClBusqueda)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,14 +330,14 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtClDireccion;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtClDocumento;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtClNombre;
-        private MaterialSkin.Controls.MaterialRaisedButton btnEliminar;
+        private MaterialSkin.Controls.MaterialRaisedButton btnClEliminar;
         private MaterialSkin.Controls.MaterialRaisedButton btnClActualizar;
         private MaterialSkin.Controls.MaterialRaisedButton btnClNuevo;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dgClBusqueda;
         private MaterialSkin.Controls.MaterialRaisedButton btnClBuscar;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtClBusqueda;
-        private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialRaisedButton btnSalir;
+        private MaterialSkin.Controls.MaterialRaisedButton btnClSalir;
     }
 }
