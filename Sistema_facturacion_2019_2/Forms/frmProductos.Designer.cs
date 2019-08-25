@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPdDetalle = new System.Windows.Forms.TextBox();
+            this.pbPdImagen = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbPdCategoria = new System.Windows.Forms.ComboBox();
             this.txtPdCantidadStock = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -50,12 +51,11 @@
             this.txtPdPrecioVenta = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtPdPrecioCompra = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtPdNombre = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.pbPdImagen = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgPdBusqueda)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPdImagen)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -119,11 +119,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(214, 19);
+            this.label1.Location = new System.Drawing.Point(301, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 18);
+            this.label1.Size = new System.Drawing.Size(162, 18);
             this.label1.TabIndex = 11;
-            this.label1.Text = "ADMINISTRACIÓN DE PRODUCTOS";
+            this.label1.Text = "P R O D U C T O S";
             // 
             // panel1
             // 
@@ -189,6 +189,14 @@
             this.txtPdDetalle.Name = "txtPdDetalle";
             this.txtPdDetalle.Size = new System.Drawing.Size(397, 79);
             this.txtPdDetalle.TabIndex = 13;
+            // 
+            // pbPdImagen
+            // 
+            this.pbPdImagen.Location = new System.Drawing.Point(430, 45);
+            this.pbPdImagen.Name = "pbPdImagen";
+            this.pbPdImagen.Size = new System.Drawing.Size(181, 237);
+            this.pbPdImagen.TabIndex = 12;
+            this.pbPdImagen.TabStop = false;
             // 
             // label2
             // 
@@ -378,14 +386,6 @@
             this.txtPdNombre.TabStop = false;
             this.txtPdNombre.UseSystemPasswordChar = false;
             // 
-            // pbPdImagen
-            // 
-            this.pbPdImagen.Location = new System.Drawing.Point(430, 45);
-            this.pbPdImagen.Name = "pbPdImagen";
-            this.pbPdImagen.Size = new System.Drawing.Size(181, 237);
-            this.pbPdImagen.TabIndex = 12;
-            this.pbPdImagen.TabStop = false;
-            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,9 +403,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgPdBusqueda)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPdImagen)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPdImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

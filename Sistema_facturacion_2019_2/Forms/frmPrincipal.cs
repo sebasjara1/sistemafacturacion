@@ -72,5 +72,29 @@ namespace Sistema_facturacion_2019_2
             Forms.frmSeguridad frmSeg = new Forms.frmSeguridad();
             AbrirForm(frmSeg);
         }
+
+        private void BtnFacturas_Click(object sender, EventArgs e)
+        {
+            Forms.frmFacturas frmFactura = new Forms.frmFacturas();
+            AbrirForm(frmFactura);
+        }
+
+        private void BtnInformes_Click(object sender, EventArgs e)
+        {
+            Forms.frmInformes frmInforme = new Forms.frmInformes();
+            AbrirForm(frmInforme);
+        }
+
+        private void BtnAyuda_Click(object sender, EventArgs e)
+        {
+            Forms.frmAyuda frmAyud = new Forms.frmAyuda();
+            AbrirForm(frmAyud);
+        }
+
+        private void BtnAcerca_Click(object sender, EventArgs e)
+        {
+            Forms.frmAcercade frmAcerca = new Forms.frmAcercade();
+            AbrirForm(frmAcerca);
+        }
     }
 }

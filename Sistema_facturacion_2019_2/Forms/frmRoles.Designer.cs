@@ -30,14 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtRlDetalle = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnRlSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnRlEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnRlGuardar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnRlConsultar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtRlDescripcion = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtRlDetalle = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,11 +47,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(268, 34);
+            this.label1.Location = new System.Drawing.Point(340, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 18);
+            this.label1.Size = new System.Drawing.Size(87, 18);
             this.label1.TabIndex = 6;
-            this.label1.Text = "ADMINISTRACIÓN DE ROLES";
+            this.label1.Text = "R O L E S";
             // 
             // panel1
             // 
@@ -65,6 +65,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(713, 236);
             this.panel1.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.label8.Location = new System.Drawing.Point(16, 103);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 20);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Detalle Rol:";
+            // 
+            // txtRlDetalle
+            // 
+            this.txtRlDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            this.txtRlDetalle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRlDetalle.Font = new System.Drawing.Font("Roboto Cn", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRlDetalle.Location = new System.Drawing.Point(19, 128);
+            this.txtRlDetalle.Multiline = true;
+            this.txtRlDetalle.Name = "txtRlDetalle";
+            this.txtRlDetalle.Size = new System.Drawing.Size(481, 45);
+            this.txtRlDetalle.TabIndex = 27;
             // 
             // panel2
             // 
@@ -164,28 +186,6 @@
             this.txtRlDescripcion.TabIndex = 2;
             this.txtRlDescripcion.TabStop = false;
             this.txtRlDescripcion.UseSystemPasswordChar = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.label8.Location = new System.Drawing.Point(16, 103);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 20);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Detalle Rol:";
-            // 
-            // txtRlDetalle
-            // 
-            this.txtRlDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
-            this.txtRlDetalle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRlDetalle.Font = new System.Drawing.Font("Roboto Cn", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRlDetalle.Location = new System.Drawing.Point(19, 128);
-            this.txtRlDetalle.Multiline = true;
-            this.txtRlDetalle.Name = "txtRlDetalle";
-            this.txtRlDetalle.Size = new System.Drawing.Size(481, 45);
-            this.txtRlDetalle.TabIndex = 27;
             // 
             // frmRoles
             // 

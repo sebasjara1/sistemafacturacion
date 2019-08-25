@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnClSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnClEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnClActualizar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnClNuevo = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -43,7 +44,6 @@
             this.dgClBusqueda = new System.Windows.Forms.DataGridView();
             this.btnClBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtClBusqueda = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.btnClSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -77,6 +77,24 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(178, 234);
             this.panel2.TabIndex = 7;
+            // 
+            // btnClSalir
+            // 
+            this.btnClSalir.AutoSize = true;
+            this.btnClSalir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnClSalir.Depth = 0;
+            this.btnClSalir.FlatAppearance.BorderSize = 0;
+            this.btnClSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnClSalir.Icon = null;
+            this.btnClSalir.Location = new System.Drawing.Point(52, 168);
+            this.btnClSalir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnClSalir.Name = "btnClSalir";
+            this.btnClSalir.Primary = true;
+            this.btnClSalir.Size = new System.Drawing.Size(72, 36);
+            this.btnClSalir.TabIndex = 4;
+            this.btnClSalir.Text = "S A L I R";
+            this.btnClSalir.UseVisualStyleBackColor = true;
+            this.btnClSalir.Click += new System.EventHandler(this.BtnClSalir_Click);
             // 
             // btnClEliminar
             // 
@@ -219,11 +237,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(249, 17);
+            this.label1.Location = new System.Drawing.Point(308, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 18);
+            this.label1.Size = new System.Drawing.Size(131, 18);
             this.label1.TabIndex = 3;
-            this.label1.Text = "ADMINISTRACIÓN DE CLIENTES";
+            this.label1.Text = "C L I E N T E S";
             // 
             // panel3
             // 
@@ -280,24 +298,6 @@
             this.txtClBusqueda.TabIndex = 10;
             this.txtClBusqueda.TabStop = false;
             this.txtClBusqueda.UseSystemPasswordChar = false;
-            // 
-            // btnClSalir
-            // 
-            this.btnClSalir.AutoSize = true;
-            this.btnClSalir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnClSalir.Depth = 0;
-            this.btnClSalir.FlatAppearance.BorderSize = 0;
-            this.btnClSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnClSalir.Icon = null;
-            this.btnClSalir.Location = new System.Drawing.Point(52, 168);
-            this.btnClSalir.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnClSalir.Name = "btnClSalir";
-            this.btnClSalir.Primary = true;
-            this.btnClSalir.Size = new System.Drawing.Size(72, 36);
-            this.btnClSalir.TabIndex = 4;
-            this.btnClSalir.Text = "S A L I R";
-            this.btnClSalir.UseVisualStyleBackColor = true;
-            this.btnClSalir.Click += new System.EventHandler(this.BtnClSalir_Click);
             // 
             // frmClientes
             // 

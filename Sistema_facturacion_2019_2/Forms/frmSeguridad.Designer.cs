@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbSgEmpleado = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSgSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnSgEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnSgGuardar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnSgConsultar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtSgClave = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtSgUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbSgEmpleado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnSgConsultar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(713, 236);
             this.panel1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.label2.Location = new System.Drawing.Point(13, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Empleado:";
+            // 
+            // cbSgEmpleado
+            // 
+            this.cbSgEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
+            this.cbSgEmpleado.Font = new System.Drawing.Font("Roboto Cn", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSgEmpleado.FormattingEnabled = true;
+            this.cbSgEmpleado.Location = new System.Drawing.Point(102, 62);
+            this.cbSgEmpleado.Name = "cbSgEmpleado";
+            this.cbSgEmpleado.Size = new System.Drawing.Size(397, 21);
+            this.cbSgEmpleado.TabIndex = 12;
             // 
             // panel2
             // 
@@ -122,6 +143,23 @@
             this.btnSgGuardar.Text = "G U A R D A R";
             this.btnSgGuardar.UseVisualStyleBackColor = true;
             // 
+            // btnSgConsultar
+            // 
+            this.btnSgConsultar.AutoSize = true;
+            this.btnSgConsultar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSgConsultar.Depth = 0;
+            this.btnSgConsultar.FlatAppearance.BorderSize = 0;
+            this.btnSgConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnSgConsultar.Icon = null;
+            this.btnSgConsultar.Location = new System.Drawing.Point(28, 24);
+            this.btnSgConsultar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSgConsultar.Name = "btnSgConsultar";
+            this.btnSgConsultar.Primary = true;
+            this.btnSgConsultar.Size = new System.Drawing.Size(127, 36);
+            this.btnSgConsultar.TabIndex = 0;
+            this.btnSgConsultar.Text = "C O N S U L T A R";
+            this.btnSgConsultar.UseVisualStyleBackColor = true;
+            // 
             // txtSgClave
             // 
             this.txtSgClave.Depth = 0;
@@ -156,54 +194,16 @@
             this.txtSgUsuario.TabStop = false;
             this.txtSgUsuario.UseSystemPasswordChar = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.label2.Location = new System.Drawing.Point(13, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 20);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Empleado:";
-            // 
-            // cbSgEmpleado
-            // 
-            this.cbSgEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(204)))), ((int)(((byte)(192)))));
-            this.cbSgEmpleado.Font = new System.Drawing.Font("Roboto Cn", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSgEmpleado.FormattingEnabled = true;
-            this.cbSgEmpleado.Location = new System.Drawing.Point(102, 62);
-            this.cbSgEmpleado.Name = "cbSgEmpleado";
-            this.cbSgEmpleado.Size = new System.Drawing.Size(397, 21);
-            this.cbSgEmpleado.TabIndex = 12;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(248, 42);
+            this.label1.Location = new System.Drawing.Point(302, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(313, 18);
+            this.label1.Size = new System.Drawing.Size(150, 18);
             this.label1.TabIndex = 4;
-            this.label1.Text = "ADMINISTRACIÓN DE SEGURIDAD";
-            // 
-            // btnSgConsultar
-            // 
-            this.btnSgConsultar.AutoSize = true;
-            this.btnSgConsultar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnSgConsultar.Depth = 0;
-            this.btnSgConsultar.FlatAppearance.BorderSize = 0;
-            this.btnSgConsultar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnSgConsultar.Icon = null;
-            this.btnSgConsultar.Location = new System.Drawing.Point(28, 24);
-            this.btnSgConsultar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnSgConsultar.Name = "btnSgConsultar";
-            this.btnSgConsultar.Primary = true;
-            this.btnSgConsultar.Size = new System.Drawing.Size(127, 36);
-            this.btnSgConsultar.TabIndex = 0;
-            this.btnSgConsultar.Text = "C O N S U L T A R";
-            this.btnSgConsultar.UseVisualStyleBackColor = true;
+            this.label1.Text = "S E G U R I DA D";
             // 
             // frmSeguridad
             // 

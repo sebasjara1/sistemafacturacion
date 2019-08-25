@@ -109,11 +109,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(234, 33);
+            this.label1.Location = new System.Drawing.Point(306, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 18);
+            this.label1.Size = new System.Drawing.Size(171, 18);
             this.label1.TabIndex = 11;
-            this.label1.Text = "ADMINISTRACIÓN DE CATEGORÍAS";
+            this.label1.Text = "C A T E G O R Í A S";
             // 
             // panel1
             // 
