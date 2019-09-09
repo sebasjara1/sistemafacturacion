@@ -28,31 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dgCgBusqueda = new System.Windows.Forms.DataGridView();
+            this.dgCgCategoria = new System.Windows.Forms.DataGridView();
             this.btnCgBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtCgBusqueda = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblPdCodProducto = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCgSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCgEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnCgActualizar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnCgGuardar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCgNuevo = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.txtCgNombre = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtCgDescripcion = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.lblCtId = new System.Windows.Forms.Label();
+            this.epCgMensajeError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtCgReferencia = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgCgBusqueda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCgCategoria)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epCgMensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.dgCgBusqueda);
+            this.panel3.Controls.Add(this.dgCgCategoria);
             this.panel3.Controls.Add(this.btnCgBuscar);
             this.panel3.Controls.Add(this.txtCgBusqueda);
             this.panel3.Location = new System.Drawing.Point(18, 320);
@@ -60,15 +63,16 @@
             this.panel3.Size = new System.Drawing.Size(779, 197);
             this.panel3.TabIndex = 12;
             // 
-            // dgCgBusqueda
+            // dgCgCategoria
             // 
-            this.dgCgBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.dgCgBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgCgBusqueda.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgCgBusqueda.Location = new System.Drawing.Point(0, 63);
-            this.dgCgBusqueda.Name = "dgCgBusqueda";
-            this.dgCgBusqueda.Size = new System.Drawing.Size(777, 132);
-            this.dgCgBusqueda.TabIndex = 11;
+            this.dgCgCategoria.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
+            this.dgCgCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCgCategoria.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgCgCategoria.Location = new System.Drawing.Point(0, 63);
+            this.dgCgCategoria.Name = "dgCgCategoria";
+            this.dgCgCategoria.Size = new System.Drawing.Size(777, 132);
+            this.dgCgCategoria.TabIndex = 11;
+            this.dgCgCategoria.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgCgCategoria_CellMouseClick);
             // 
             // btnCgBuscar
             // 
@@ -86,6 +90,7 @@
             this.btnCgBuscar.TabIndex = 9;
             this.btnCgBuscar.Text = "B U S C A R";
             this.btnCgBuscar.UseVisualStyleBackColor = true;
+            this.btnCgBuscar.Click += new System.EventHandler(this.BtnCgBuscar_Click);
             // 
             // txtCgBusqueda
             // 
@@ -119,42 +124,20 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.lblPdCodProducto);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtCgReferencia);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.txtCgNombre);
+            this.panel1.Controls.Add(this.txtCgDescripcion);
             this.panel1.Location = new System.Drawing.Point(45, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(713, 236);
             this.panel1.TabIndex = 10;
-            // 
-            // lblPdCodProducto
-            // 
-            this.lblPdCodProducto.AutoSize = true;
-            this.lblPdCodProducto.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPdCodProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.lblPdCodProducto.Location = new System.Drawing.Point(204, 86);
-            this.lblPdCodProducto.Name = "lblPdCodProducto";
-            this.lblPdCodProducto.Size = new System.Drawing.Size(0, 20);
-            this.lblPdCodProducto.TabIndex = 18;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.label4.Location = new System.Drawing.Point(13, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 20);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Código Referencia:";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(99)))), ((int)(((byte)(130)))));
             this.panel2.Controls.Add(this.btnCgSalir);
             this.panel2.Controls.Add(this.btnCgEliminar);
-            this.panel2.Controls.Add(this.btnCgActualizar);
+            this.panel2.Controls.Add(this.btnCgGuardar);
             this.panel2.Controls.Add(this.btnCgNuevo);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(533, 0);
@@ -196,23 +179,25 @@
             this.btnCgEliminar.TabIndex = 2;
             this.btnCgEliminar.Text = "E L I M I N A R";
             this.btnCgEliminar.UseVisualStyleBackColor = true;
+            this.btnCgEliminar.Click += new System.EventHandler(this.BtnCgEliminar_Click);
             // 
-            // btnCgActualizar
+            // btnCgGuardar
             // 
-            this.btnCgActualizar.AutoSize = true;
-            this.btnCgActualizar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCgActualizar.Depth = 0;
-            this.btnCgActualizar.FlatAppearance.BorderSize = 0;
-            this.btnCgActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
-            this.btnCgActualizar.Icon = null;
-            this.btnCgActualizar.Location = new System.Drawing.Point(24, 70);
-            this.btnCgActualizar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnCgActualizar.Name = "btnCgActualizar";
-            this.btnCgActualizar.Primary = true;
-            this.btnCgActualizar.Size = new System.Drawing.Size(134, 36);
-            this.btnCgActualizar.TabIndex = 1;
-            this.btnCgActualizar.Text = "A C T U A L I Z A R";
-            this.btnCgActualizar.UseVisualStyleBackColor = true;
+            this.btnCgGuardar.AutoSize = true;
+            this.btnCgGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCgGuardar.Depth = 0;
+            this.btnCgGuardar.FlatAppearance.BorderSize = 0;
+            this.btnCgGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.btnCgGuardar.Icon = null;
+            this.btnCgGuardar.Location = new System.Drawing.Point(39, 70);
+            this.btnCgGuardar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCgGuardar.Name = "btnCgGuardar";
+            this.btnCgGuardar.Primary = true;
+            this.btnCgGuardar.Size = new System.Drawing.Size(104, 36);
+            this.btnCgGuardar.TabIndex = 1;
+            this.btnCgGuardar.Text = "G U A R D A R";
+            this.btnCgGuardar.UseVisualStyleBackColor = true;
+            this.btnCgGuardar.Click += new System.EventHandler(this.BtnCgGuardar_Click);
             // 
             // btnCgNuevo
             // 
@@ -230,23 +215,54 @@
             this.btnCgNuevo.TabIndex = 0;
             this.btnCgNuevo.Text = "N U E V O";
             this.btnCgNuevo.UseVisualStyleBackColor = true;
+            this.btnCgNuevo.Click += new System.EventHandler(this.BtnCgNuevo_Click);
             // 
-            // txtCgNombre
+            // txtCgDescripcion
             // 
-            this.txtCgNombre.Depth = 0;
-            this.txtCgNombre.Hint = "Nombre";
-            this.txtCgNombre.Location = new System.Drawing.Point(17, 119);
-            this.txtCgNombre.MaxLength = 32767;
-            this.txtCgNombre.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtCgNombre.Name = "txtCgNombre";
-            this.txtCgNombre.PasswordChar = '\0';
-            this.txtCgNombre.SelectedText = "";
-            this.txtCgNombre.SelectionLength = 0;
-            this.txtCgNombre.SelectionStart = 0;
-            this.txtCgNombre.Size = new System.Drawing.Size(481, 23);
-            this.txtCgNombre.TabIndex = 2;
-            this.txtCgNombre.TabStop = false;
-            this.txtCgNombre.UseSystemPasswordChar = false;
+            this.txtCgDescripcion.Depth = 0;
+            this.txtCgDescripcion.Hint = "Descripción";
+            this.txtCgDescripcion.Location = new System.Drawing.Point(17, 119);
+            this.txtCgDescripcion.MaxLength = 32767;
+            this.txtCgDescripcion.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCgDescripcion.Name = "txtCgDescripcion";
+            this.txtCgDescripcion.PasswordChar = '\0';
+            this.txtCgDescripcion.SelectedText = "";
+            this.txtCgDescripcion.SelectionLength = 0;
+            this.txtCgDescripcion.SelectionStart = 0;
+            this.txtCgDescripcion.Size = new System.Drawing.Size(481, 23);
+            this.txtCgDescripcion.TabIndex = 2;
+            this.txtCgDescripcion.TabStop = false;
+            this.txtCgDescripcion.UseSystemPasswordChar = false;
+            // 
+            // lblCtId
+            // 
+            this.lblCtId.AutoSize = true;
+            this.lblCtId.Location = new System.Drawing.Point(45, 46);
+            this.lblCtId.Name = "lblCtId";
+            this.lblCtId.Size = new System.Drawing.Size(25, 13);
+            this.lblCtId.TabIndex = 13;
+            this.lblCtId.Text = "000";
+            // 
+            // epCgMensajeError
+            // 
+            this.epCgMensajeError.ContainerControl = this;
+            // 
+            // txtCgReferencia
+            // 
+            this.txtCgReferencia.Depth = 0;
+            this.txtCgReferencia.Hint = "Referencia";
+            this.txtCgReferencia.Location = new System.Drawing.Point(18, 83);
+            this.txtCgReferencia.MaxLength = 32767;
+            this.txtCgReferencia.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCgReferencia.Name = "txtCgReferencia";
+            this.txtCgReferencia.PasswordChar = '\0';
+            this.txtCgReferencia.SelectedText = "";
+            this.txtCgReferencia.SelectionLength = 0;
+            this.txtCgReferencia.SelectionStart = 0;
+            this.txtCgReferencia.Size = new System.Drawing.Size(481, 23);
+            this.txtCgReferencia.TabIndex = 8;
+            this.txtCgReferencia.TabStop = false;
+            this.txtCgReferencia.UseSystemPasswordChar = false;
             // 
             // frmCategorias
             // 
@@ -254,19 +270,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(163)))), ((int)(((byte)(188)))));
             this.ClientSize = new System.Drawing.Size(861, 576);
+            this.Controls.Add(this.lblCtId);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCategorias";
             this.Text = "frmCategorias";
+            this.Load += new System.EventHandler(this.FrmCategorias_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgCgBusqueda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCgCategoria)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epCgMensajeError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,7 +293,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dgCgBusqueda;
+        private System.Windows.Forms.DataGridView dgCgCategoria;
         private MaterialSkin.Controls.MaterialRaisedButton btnCgBuscar;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtCgBusqueda;
         private System.Windows.Forms.Label label1;
@@ -283,10 +301,11 @@
         private System.Windows.Forms.Panel panel2;
         private MaterialSkin.Controls.MaterialRaisedButton btnCgSalir;
         private MaterialSkin.Controls.MaterialRaisedButton btnCgEliminar;
-        private MaterialSkin.Controls.MaterialRaisedButton btnCgActualizar;
+        private MaterialSkin.Controls.MaterialRaisedButton btnCgGuardar;
         private MaterialSkin.Controls.MaterialRaisedButton btnCgNuevo;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtCgNombre;
-        private System.Windows.Forms.Label lblPdCodProducto;
-        private System.Windows.Forms.Label label4;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCgDescripcion;
+        private System.Windows.Forms.Label lblCtId;
+        private System.Windows.Forms.ErrorProvider epCgMensajeError;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCgReferencia;
     }
 }

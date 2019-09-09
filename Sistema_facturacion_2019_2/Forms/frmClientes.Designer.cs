@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnClSalir = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -41,13 +42,16 @@
             this.txtClNombre = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dgClBusqueda = new System.Windows.Forms.DataGridView();
+            this.dgClCliente = new System.Windows.Forms.DataGridView();
             this.btnClBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtClBusqueda = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.lblClId = new System.Windows.Forms.Label();
+            this.epClMensajeError = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgClBusqueda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgClCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epClMensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,6 +116,7 @@
             this.btnClEliminar.TabIndex = 2;
             this.btnClEliminar.Text = "E L I M I N A R";
             this.btnClEliminar.UseVisualStyleBackColor = true;
+            this.btnClEliminar.Click += new System.EventHandler(this.BtnClEliminar_Click);
             // 
             // btnClActualizar
             // 
@@ -121,14 +126,15 @@
             this.btnClActualizar.FlatAppearance.BorderSize = 0;
             this.btnClActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.btnClActualizar.Icon = null;
-            this.btnClActualizar.Location = new System.Drawing.Point(24, 70);
+            this.btnClActualizar.Location = new System.Drawing.Point(38, 70);
             this.btnClActualizar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnClActualizar.Name = "btnClActualizar";
             this.btnClActualizar.Primary = true;
-            this.btnClActualizar.Size = new System.Drawing.Size(134, 36);
+            this.btnClActualizar.Size = new System.Drawing.Size(104, 36);
             this.btnClActualizar.TabIndex = 1;
-            this.btnClActualizar.Text = "A C T U A L I Z A R";
+            this.btnClActualizar.Text = "G U A R D A R";
             this.btnClActualizar.UseVisualStyleBackColor = true;
+            this.btnClActualizar.Click += new System.EventHandler(this.BtnClActualizar_Click);
             // 
             // btnClNuevo
             // 
@@ -146,6 +152,7 @@
             this.btnClNuevo.TabIndex = 0;
             this.btnClNuevo.Text = "N U E V O";
             this.btnClNuevo.UseVisualStyleBackColor = true;
+            this.btnClNuevo.Click += new System.EventHandler(this.BtnClNuevo_Click);
             // 
             // txtClEmail
             // 
@@ -247,7 +254,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.dgClBusqueda);
+            this.panel3.Controls.Add(this.dgClCliente);
             this.panel3.Controls.Add(this.btnClBuscar);
             this.panel3.Controls.Add(this.txtClBusqueda);
             this.panel3.Location = new System.Drawing.Point(16, 310);
@@ -255,15 +262,16 @@
             this.panel3.Size = new System.Drawing.Size(779, 216);
             this.panel3.TabIndex = 9;
             // 
-            // dgClBusqueda
+            // dgClCliente
             // 
-            this.dgClBusqueda.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
-            this.dgClBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgClBusqueda.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgClBusqueda.Location = new System.Drawing.Point(0, 57);
-            this.dgClBusqueda.Name = "dgClBusqueda";
-            this.dgClBusqueda.Size = new System.Drawing.Size(777, 157);
-            this.dgClBusqueda.TabIndex = 11;
+            this.dgClCliente.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(190)))), ((int)(((byte)(195)))));
+            this.dgClCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgClCliente.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgClCliente.Location = new System.Drawing.Point(0, 57);
+            this.dgClCliente.Name = "dgClCliente";
+            this.dgClCliente.Size = new System.Drawing.Size(777, 157);
+            this.dgClCliente.TabIndex = 11;
+            this.dgClCliente.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgClCliente_CellMouseClick);
             // 
             // btnClBuscar
             // 
@@ -281,6 +289,7 @@
             this.btnClBuscar.TabIndex = 9;
             this.btnClBuscar.Text = "B U S C A R";
             this.btnClBuscar.UseVisualStyleBackColor = true;
+            this.btnClBuscar.Click += new System.EventHandler(this.BtnClBuscar_Click);
             // 
             // txtClBusqueda
             // 
@@ -299,24 +308,40 @@
             this.txtClBusqueda.TabStop = false;
             this.txtClBusqueda.UseSystemPasswordChar = false;
             // 
+            // lblClId
+            // 
+            this.lblClId.AutoSize = true;
+            this.lblClId.Location = new System.Drawing.Point(43, 36);
+            this.lblClId.Name = "lblClId";
+            this.lblClId.Size = new System.Drawing.Size(25, 13);
+            this.lblClId.TabIndex = 10;
+            this.lblClId.Text = "000";
+            // 
+            // epClMensajeError
+            // 
+            this.epClMensajeError.ContainerControl = this;
+            // 
             // frmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(163)))), ((int)(((byte)(188)))));
             this.ClientSize = new System.Drawing.Size(824, 596);
+            this.Controls.Add(this.lblClId);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmClientes";
             this.Text = "frmClientes";
+            this.Load += new System.EventHandler(this.FrmClientes_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgClBusqueda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgClCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epClMensajeError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,9 +360,11 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnClNuevo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dgClBusqueda;
+        private System.Windows.Forms.DataGridView dgClCliente;
         private MaterialSkin.Controls.MaterialRaisedButton btnClBuscar;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtClBusqueda;
         private MaterialSkin.Controls.MaterialRaisedButton btnClSalir;
+        private System.Windows.Forms.Label lblClId;
+        private System.Windows.Forms.ErrorProvider epClMensajeError;
     }
 }

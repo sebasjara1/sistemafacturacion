@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.cbSgEmpleado = new System.Windows.Forms.ComboBox();
@@ -39,8 +40,10 @@
             this.txtSgClave = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtSgUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
+            this.epSgMensajeError = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epSgMensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,6 +128,7 @@
             this.btnSgEliminar.TabIndex = 2;
             this.btnSgEliminar.Text = "E L I M I N A R";
             this.btnSgEliminar.UseVisualStyleBackColor = true;
+            this.btnSgEliminar.Click += new System.EventHandler(this.BtnSgEliminar_Click);
             // 
             // btnSgGuardar
             // 
@@ -142,6 +146,7 @@
             this.btnSgGuardar.TabIndex = 1;
             this.btnSgGuardar.Text = "G U A R D A R";
             this.btnSgGuardar.UseVisualStyleBackColor = true;
+            this.btnSgGuardar.Click += new System.EventHandler(this.BtnSgGuardar_Click);
             // 
             // btnSgConsultar
             // 
@@ -159,6 +164,7 @@
             this.btnSgConsultar.TabIndex = 0;
             this.btnSgConsultar.Text = "C O N S U L T A R";
             this.btnSgConsultar.UseVisualStyleBackColor = true;
+            this.btnSgConsultar.Click += new System.EventHandler(this.BtnSgConsultar_Click);
             // 
             // txtSgClave
             // 
@@ -205,6 +211,10 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "S E G U R I DA D";
             // 
+            // epSgMensajeError
+            // 
+            this.epSgMensajeError.ContainerControl = this;
+            // 
             // frmSeguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,10 +226,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSeguridad";
             this.Text = "frmSeguridad";
+            this.Load += new System.EventHandler(this.FrmSeguridad_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epSgMensajeError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,5 +250,6 @@
         private System.Windows.Forms.ComboBox cbSgEmpleado;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialRaisedButton btnSgConsultar;
+        private System.Windows.Forms.ErrorProvider epSgMensajeError;
     }
 }

@@ -24,9 +24,33 @@ namespace Sistema_facturacion_2019_2
 
         private void BtnValidar_Click(object sender, EventArgs e)
         {
-            frmPrincipal frmppal = new frmPrincipal();
-            this.Hide();
-            frmppal.Show();
+            string respuesta = "";
+
+            if (txtUsuario.Text != "" && txtPassword.Text != "")
+            {
+                Acceso_datos acceso = new Acceso_datos();
+
+                respuesta = acceso.ValidarUsuario(txtUsuario.Text, txtPassword.Text);
+
+                if (respuesta != "")
+                {
+                    MessageBox.Show("Bienvenido: " + respuesta);
+                    frmPrincipal frmpppl = new frmPrincipal();
+                    this.Hide();
+                    frmpppl.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o Contraseña invalidos");
+                    txtUsuario.Text = "";
+                    txtUsuario.Focus();
+                    txtPassword.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar Usuario y Clave");
+            }
         }
     }
 }
